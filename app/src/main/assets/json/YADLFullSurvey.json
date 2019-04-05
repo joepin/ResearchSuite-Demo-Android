@@ -1,7 +1,7 @@
 {
   "type": "recurring",
   "identifier": "yadl_full",
-  "title": "YADL Full Intake Survey",
+  "title": "Asthma Survey",
   "guid": "yadl_full-1",
   "activity": {
     "type"      : "elementList",
@@ -9,72 +9,190 @@
     "optional":false,
     "elements"   : [
       {
-        "identifier"   : "introduction",
+        "identifier"   : "introduction-1",
         "type"         : "instruction",
-        "title"        : "Welcome to the YADL Full Assessment",
-        "text"         : "Please rate each activity as \nEasy, Moderate, or Hard"
+        "title"        : "Welcome to the Asthma Survey!",
+        "text"         : "The purpose of this study is to help you manage your asthma treatment plan more effectively. Your privacy and confidentiality will be protected in this study. We will be de-identifying your data and only the researchers conducting this study will have access to this de-identified data. Taking part in this study is voluntary. You may refuse to participate before the study begins, discontinue at any time, or skip any questions/procedures that may make you feel uncomfortable about with no penalty. We do not anticipate any risks from participating in this research."
       },
       {
-        "identifier": "yadl_full",
+        "identifier"   : "introduction-2",
+        "type"         : "instruction",
+        "title"        : "Instructions",
+        "text"         : "Please select the option that most accurately reflects your experiences."
+      },
+      {
+        "identifier": "asthma_activities",
         "type": "YADLFullAssessment",
-        "text": "Over the past week, how difficult was this activity for you?",
+        "text": "On a scale of 1 to 5 (1 = not at all, 5 = extremely), how difficult was this activity today?",
         "choices":[
           {
-            "text":"Easy",
-            "value":"easy",
-            "color":"#258313"
+            "text":"1",
+            "value":"1",
+            "color":"#4CAF50"
           },
           {
-            "text":"Moderate",
-            "value":"moderate",
-            "color":"#F0743E"
+            "text":"2",
+            "value":"2",
+            "color":"#FFEB3B"
           },
           {
-            "text":"Hard",
-            "value":"hard",
-            "color":"#D20005"
+            "text":"3",
+            "value":"3",
+            "color":"#BDBDBD"
+          },
+          {
+            "text":"4",
+            "value":"4",
+            "color":"#FF6F00"
+          },
+          {
+            "text":"5",
+            "value":"5",
+            "color":"#E53935"
           }
         ],
         "imageExtension": "jpeg",
         "items": [
           {
-            "imageTitle":"BedtoChair",
-            "description":"Bed To Chair",
-            "identifier":"BedtoChair"
+            "imageTitle":"Walking",
+            "description":"Walking",
+            "identifier":"Walking"
+          },
+          {
+            "imageTitle":"Showering",
+            "description":"Showering/Bathing",
+            "identifier":"Washing"
           },
           {
             "imageTitle":"Dressing",
-            "description":"Dressing",
+            "description":"Dressing Myself",
             "identifier":"Dressing"
           },
           {
-            "imageTitle":"Housework",
-            "description":"Housework",
-            "identifier":"Housework"
-          },
-          {
-            "imageTitle":"Lifting",
-            "description":"Lift 10-pounds",
-            "identifier":"Lifting"
-          },
-          {
-            "imageTitle":"Shopping",
-            "description":"Shopping",
-            "identifier":"Shopping"
-          },
-          {
-            "imageTitle":"ShortWalk",
-            "description":"Talking a short walk",
-            "identifier":"ShortWalk"
-          },
-          {
-            "imageTitle":"Walkingupstairs",
-            "description":"Climbing Stairs",
-            "identifier":"Walkingupstairs"
+            "imageTitle":"Daily",
+            "description":"Usual Activities",
+            "identifier":"UsualActivities"
           }
-
-
-
+        ]
+      },
+      {
+        "identifier": "miss_work_or_school",
+        "type": "YADLFullAssessment",
+        "text": "How many times did you miss work or school due to asthma this week?",
+        "choices":[
+          {
+            "text":"0",
+            "value":"0",
+            "color":"#4CAF50"
+          },
+          {
+            "text":"1",
+            "value":"1",
+            "color":"#FFEB3B"
+          },
+          {
+            "text":"2",
+            "value":"2",
+            "color":"#BDBDBD"
+          },
+          {
+            "text":"3",
+            "value":"3",
+            "color":"#FF6F00"
+          },
+          {
+            "text":"4+",
+            "value":"4+",
+            "color":"#E53935"
+          }
+        ],
+        "imageExtension": "jpeg",
+        "items": [
+          {
+            "imageTitle":"School",
+            "description":"Work or School",
+            "identifier":"WorkSchool"
+          }
+        ]
+      },
+      {
+        "identifier": "waking_up_from_sleep",
+        "type": "YADLFullAssessment",
+        "text": "How many nights did asthma symptoms wake you up from sleep this week?",
+        "choices":[
+          {
+            "text":"0",
+            "value":"0",
+            "color":"#4CAF50"
+          },
+          {
+            "text":"1",
+            "value":"1",
+            "color":"#FFEB3B"
+          },
+          {
+            "text":"2",
+            "value":"2",
+            "color":"#BDBDBD"
+          },
+          {
+            "text":"3",
+            "value":"3",
+            "color":"#FF6F00"
+          },
+          {
+            "text":"4+",
+            "value":"4+",
+            "color":"#E53935"
+          }
+        ],
+        "imageExtension": "jpeg",
+        "items": [
+          {
+            "imageTitle":"Sleeping",
+            "description":"Wake up From Sleep",
+            "identifier":"WakingUp"
+          }
+        ]
+      },
+      {
+        "identifier": "quick_relief_inhaler",
+        "type": "YADLFullAssessment",
+        "text": "How many times did you use a quick relief inhaler this week?",
+        "choices":[
+          {
+            "text":"0",
+            "value":"0",
+            "color":"#4CAF50"
+          },
+          {
+            "text":"1",
+            "value":"1",
+            "color":"#FFEB3B"
+          },
+          {
+            "text":"2",
+            "value":"2",
+            "color":"#BDBDBD"
+          },
+          {
+            "text":"3",
+            "value":"3",
+            "color":"#FF6F00"
+          },
+          {
+            "text":"4+",
+            "value":"4+",
+            "color":"#E53935"
+          }
+        ],
+        "imageExtension": "jpeg",
+        "items": [
+          {
+            "imageTitle":"Inhaler",
+            "description":"Quick Relief Inhaler",
+            "identifier":"Inhaler"
+          }
         ]
       }
     ]
@@ -83,16 +201,16 @@
     {
       "transform": "YADLFullRaw",
       "inputMapping": [
-        {"parameter":"Eating", "stepIdentifier":"yadl_full.BedtoChair"},
-        {"parameter":"Bathing", "stepIdentifier":"yadl_full.Dressing"},
-        {"parameter":"Dressing", "stepIdentifier":"yadl_full.Housework"},
-        {"parameter":"Toilet", "stepIdentifier":"yadl_full.Lifting"},
-        {"parameter":"BedToChair", "stepIdentifier":"yadl_full.Shopping"},
-        {"parameter":"Shopping", "stepIdentifier":"yadl_full.ShortWalk"},
-        {"parameter":"Housework", "stepIdentifier":"yadl_full.Walkingupstairs"},
+        {"parameter":"Walking", "stepIdentifier":"asthma_activities.Walking"},
+        {"parameter":"Washing", "stepIdentifier":"asthma_activities.Washing"},
+        {"parameter":"Dressing", "stepIdentifier":"asthma_activities.Dressing"},
+        {"parameter":"UsualActivities", "stepIdentifier":"asthma_activities.UsualActivities"},
+        {"parameter":"WorkSchool", "stepIdentifier":"miss_work_or_school.WorkSchool"},
+        {"parameter":"WakingUp", "stepIdentifier":"waking_up_from_sleep.WakingUp"},
+        {"parameter":"Inhaler", "stepIdentifier":"quick_relief_inhaler.Inhaler"},
         {"parameter": "schemaID", "constant":{
           "namespace": "Cornell",
-          "name": "yadl-full-assessment",
+          "name": "asthma-daily-survey",
           "version": "2.0.0"
         }
         }

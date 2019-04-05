@@ -3,15 +3,7 @@
 
     <Preference
         android:key="yadl_full_assessment"
-        android:title="Take YADL Full Assessment"/>
-
-    <Preference
-        android:key="yadl_spot_assessment"
-        android:title="Take YADL Spot Assessment"/>
-
-    <Preference
-        android:key="pam_assessment"
-        android:title="Take PAM Assessment"/>
+        android:title="Take Asthma Survey" />
 
     <Preference
         android:key="demographics_assessment"
